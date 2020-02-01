@@ -1,0 +1,141 @@
+body{
+    font-family: sans-serif;
+}
+.partion{
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+.one{
+    left: 0;
+    background-image: url(cofleft.jpg);
+    -webkit-backdrop-size:cover;
+    background-size: cover;
+    background-position: center center;
+    transition: 0.9s;
+}
+.one h2{
+    visibility: hidden;
+    transition: .9s;
+    transform: scale(0);
+    font-weight: 800;
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: center;
+
+}
+.one:hover{
+    background: #000;
+}
+.one:hover h2{
+    visibility: visible;
+    transform: scale(1);
+    
+}
+.image{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform:translate(-50%,-50%) ;
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.image h2{
+    font-size: 45px;
+    color: lime;
+    text-transform: uppercase;
+    z-index: 2;
+}
+.two{
+    right: 0;
+    background-image: url(cofright.jpg);
+    -webkit-background-size:cover;
+    background-size: cover;
+    background-position: center center;
+    transition: 0.9s;
+}
+.two h2{
+    visibility: hidden;
+    transition: .9s;
+    transform: scale(0);
+    font-weight: 600;
+    font-family: sans-serif;
+    text-align: center;
+
+}
+.two:hover{
+    background: #000;
+}
+
+.two:hover h2{
+    visibility: visible;
+    transform: scale(1);
+    
+}
+a{
+    text-decoration: none;
+    color: lime;
+    font-weight: 800;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+@media only screen and (min-width:768px) and (max-width:991px){
+    .one{
+        top: 0;
+    }
+    .partion{
+        height: 50%;
+        width: 100%;
+        padding-top: 0;
+    }
+    .two{
+        top: 512px;
+    }
+
+}
+@media only screen and (max-width:767px){
+    .one{
+        top: 0;
+    }
+    .partion{
+        height: 50%;
+        width: 100%;
+        padding-top: 0;
+    }
+    .two{
+        top: 240px;
+    }
+    .image h2{
+        font-size: 25px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
